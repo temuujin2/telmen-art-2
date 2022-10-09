@@ -14,10 +14,10 @@ export const Totems = () => {
             <div className="totems-wrapp">
                 <h2>TOTEMS</h2>
                 <div className="img-wrapp-totem">
-                    <img src={totem} />
-                    <img src={totem} />
-                    <img src={totem} />
-                    <img src={totem} />
+                    <img src={totem} alt="for totem"/>
+                    <img src={totem} alt="for totem"/>
+                    <img src={totem} alt="for totem"/>
+                    <img src={totem} alt="for totem"/>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry. Lorem Ipsum has been the
@@ -36,25 +36,25 @@ export const Totems = () => {
                     <div className="left-side-totem">
                         <div className="column-totem">
                             <h3>1.</h3>
-                            <img src={totem} />
+                            <img src={totem} alt="for totem"/>
                         </div>
                         <div className="column-totem">
                             <h3>2.</h3>
-                            <img src={totem} />
-                            <img src={totem} />
+                            <img src={totem} alt="for totem"/>
+                            <img src={totem} alt="for totem"/>
                         </div>
                         <div className="column-totem">
                             <h3>3.</h3>
-                            <img src={totem} />
-                            <img src={totem} />
-                            <img src={totem} />
+                            <img src={totem} alt="for totem"/>
+                            <img src={totem} alt="for totem"/>
+                            <img src={totem} alt="for totem"/>
                         </div>
                         <div className="column-totem">
                             <h3>4.</h3>
-                            <img src={totem} />
-                            <img src={totem} />
-                            <img src={totem} />
-                            <img src={totem} />
+                            <img src={totem} alt="for totem"/>
+                            <img src={totem} alt="for totem"/>
+                            <img src={totem} alt="for totem"/>
+                            <img src={totem} alt="for totem"/>
                         </div>
                     </div>
 
@@ -68,31 +68,31 @@ export const Totems = () => {
                         </tr>
                         <tr>
                             <td>15%</td>
-                            <td><img src={check1}></img></td>
-                            <td><img src={check1}></img></td>
-                            <td><img src={check1}></img></td>
-                            <td><img src={check1}></img></td>
+                            <td><img src={check1} alt="for totem"/></td>
+                            <td><img src={check1} alt="for totem"/></td>
+                            <td><img src={check1} alt="for totem"/></td>
+                            <td><img src={check1} alt="for totem"/></td>
                         </tr>
                         <tr>
                             <td>30%</td>
-                            <td><img src={check2}></img></td>
-                            <td><img src={check2}></img></td>
-                            <td><img src={check2}></img></td>
-                            <td><img src={check2}></img></td>
+                            <td><img src={check2} alt="for totem"/></td>
+                            <td><img src={check2} alt="for totem"/></td>
+                            <td><img src={check2} alt="for totem"/></td>
+                            <td><img src={check2} alt="for totem"/></td>
                         </tr>
                         <tr>
                             <td>45%</td>
-                            <td><img src={check3}></img></td>
-                            <td><img src={check3}></img></td>
-                            <td><img src={check3}></img></td>
-                            <td><img src={check3}></img></td>
+                            <td><img src={check3} alt="for totem"/></td>
+                            <td><img src={check3} alt="for totem"/></td>
+                            <td><img src={check3} alt="for totem"/></td>
+                            <td><img src={check3} alt="for totem"/></td>
                         </tr>
                         <tr>
                             <td>60%</td>
-                            <td><img src={check4}></img></td>
-                            <td><img src={check4}></img></td>
-                            <td><img src={check5}></img></td>
-                            <td><img src={check5}></img></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check5} alt="for totem"/></td>
+                            <td><img src={check5} alt="for totem"/></td>
                         </tr>
                     </table>
 
@@ -102,7 +102,7 @@ export const Totems = () => {
 
 
 
-            <img className="back-img-totem" src={imgBack_about}></img>
+            <img className="back-img-totem" src={imgBack_about} alt="for totem"/>
         </section>
     )
 }

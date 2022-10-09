@@ -2,6 +2,8 @@ import Data from '../data/ImageData.json'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MovieDataContext1 } from "../newContext"
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 
 export const Portfolio = ({ data }) => {
@@ -16,11 +18,14 @@ export const Portfolio = ({ data }) => {
     if (isActive) return navigate('/Booking');
     if (isActive1) return navigate('/Tab3D');
     return (
+        <Tabs className="top_tab">
         <div className='main2'>
             <h1>PORTFOLIO</h1>
-            <input type="radio" className='tabs__radio' name='tabs-example' id='tab1' checked />
-            <label for="tab1" className='tabs__label'>2D</label>
-            <div className='tabs__content'>
+            <TabList>
+                <Tab>2D</Tab>
+                <Tab>3D</Tab>
+            </TabList>
+            <TabPanel>
                 <div className='flex-wrapper'>
                     {Data && Data.map(data => {
                         let arr = [data.kind2d, data.kind3d, data.name2d,
@@ -28,7 +33,7 @@ export const Portfolio = ({ data }) => {
                         return (
                             <div className='grid'>
                                 <a onClick={() => { setIsData1(arr); setIsActive(true) }}>
-                                    <img className="box" src={data.image2d} style={{ width: "200px", height: "200px" }}></img>
+                                    <img className="box" src={data.image2d} style={{ width: "200px", height: "200px" }} alt="for portfolio"/>
                                     <div className='grid-text'>
                                         <p>{data.kind2d}</p>
                                         <span>{data.name2d}</span>
@@ -39,12 +44,11 @@ export const Portfolio = ({ data }) => {
                         )
                     })}
                 </div>
-            </div>
+            </TabPanel>
 
 
-            <input type="radio" className='tabs__radio' name='tabs-example' id='tab2' />
-            <label for="tab2" className='tabs__label'>3D</label>
-            <div className='tabs__content'>
+            
+            <TabPanel>
                 <div className='flex-wrapper'>
                     {Data && Data.map(data => {
                         let arr = [data.kind2d, data.kind3d, data.name2d,
@@ -52,7 +56,7 @@ export const Portfolio = ({ data }) => {
                         return (
                             <div className='grid'>
                                 <a onClick={() => { setIsData1(arr); setIsActive1(true) }}>
-                                    <img className="box" src={data.image3d} style={{ width: "200px", height: "200px" }}></img>
+                                    <img className="box" src={data.image3d} style={{ width: "200px", height: "200px" }} alt="for 3D"/>
                                     <div className='grid-text'>
                                         <p>{data.kind3d}</p>
                                         <span>{data.name3d}</span>
@@ -63,9 +67,11 @@ export const Portfolio = ({ data }) => {
                         )
                     })}
                 </div >
+                </TabPanel>
             </div>
 
-        </div>
+            
+        </Tabs>
 
 
     )

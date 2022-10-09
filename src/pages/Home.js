@@ -10,15 +10,9 @@ import {
   batch,
   Fade,
   FadeIn,
-  FadeOut,
   Move,
   MoveIn,
-  MoveOut,
   Sticky,
-  StickyIn,
-  StickyOut,
-  Zoom,
-  ZoomIn,
   ZoomOut
 } from "react-scroll-motion";
 
@@ -56,7 +50,7 @@ export const Home = () => {
               <button>more info</button>
             </div>
 
-            <img src={imgBack}></img>
+            <img src={imgBack} alt="for image"/>
           </div>
         </Animator>
       </ScrollPage>
@@ -66,7 +60,7 @@ export const Home = () => {
           <div className='page-3'>
             <b style={{ color: "white" }}>Third Page</b>
 
-            <img src={imgBack2}></img>
+            <img src={imgBack2}alt="for image"/>
           </div>
         </Animator>
       </ScrollPage>
