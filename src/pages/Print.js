@@ -34,7 +34,7 @@ export const Print = () => {
                     </div>
                 </Carousel>
                 <div className="content-text">
-                    <button onClick={() => backBtn(-1)}>Back</button>
+                    <button onClick={() => backBtn(-2)}>Back</button>
                     <p>Name: <span>{isShopData[2]}</span></p>
                     <p>Product kind: <b>{isShopData[1]}</b></p>
                     <p>Title: <b>{isShopData[5]}</b></p>
