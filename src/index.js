@@ -4,19 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { MovieProvider } from './MovieDataContext';
+import { ShopProvider } from './ShopDataContext';
 import { MovieProvider1 } from "./newContext"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MovieProvider>
+      <ShopProvider>
         <MovieProvider1>
 
           <App />
         </MovieProvider1>
-      </MovieProvider>
+      </ShopProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

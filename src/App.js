@@ -2,7 +2,7 @@ import './App.css';
 import React from "react";
 import Data from './data/ImageData.json'
 import ChontLogo from './images/CHONT_LOGO_white.png'
-import Box from '@mui/material/Box';  
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import VerticalLinearStepper from './component/Stepper';
@@ -20,10 +20,15 @@ import { Totems } from './pages/Totems';
 import { Contact } from './pages/Contact';
 import { News } from './pages/News';
 import { About } from './pages/About';
+import { Print } from './pages/Print';
+import { Models } from './pages/Models';
+import { Collectibles } from './pages/Collectibles';
+import { Merch } from './pages/Merch';
+import { Tutorials } from './pages/Tutorials';
 
 const style = {
   position: 'absolute',
-  borderRadius:'15px',
+  borderRadius: '15px',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
@@ -86,7 +91,7 @@ const App = () => {
                 <Typography id="modal-modal-title" variant="h6" component="h2">
                   Thank you for supporting me
                 </Typography>
-                <VerticalLinearStepper/>
+                <VerticalLinearStepper />
               </Box>
             </Modal>
           </ul>
@@ -97,6 +102,11 @@ const App = () => {
           <Route path="/Totems" element={<Totems />} />
           <Route path="/Tab3D" element={<Tab3D data={Data} />} />
           <Route path="/Shop" element={<Shop />} />
+          <Route path="/Print" element={<Print data={Data} />} />
+          <Route path="/Models" element={<Models data={Data} />} />
+          <Route path="/Collectibles" element={<Collectibles data={Data} />} />
+          <Route path="/Merch" element={<Merch data={Data} />} />
+          <Route path="/Tutorials" element={<Tutorials data={Data} />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
           <Route path="/News" element={<News />} />
@@ -104,7 +114,7 @@ const App = () => {
         </Routes>
 
 
-        <span style={{ color: "white", paddingBottom: "20px", fontSize: "13px", marginTop:'50px' }}>© Copyright All Rights Reserved | Telmen Bayasgalan 2022</span>
+        <span style={{ color: "white", paddingBottom: "20px", fontSize: "13px", marginTop: '50px' }}>© Copyright All Rights Reserved | Telmen Bayasgalan 2022</span>
       </div>
     </>
   );
