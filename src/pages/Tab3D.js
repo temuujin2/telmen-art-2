@@ -13,7 +13,7 @@ export function Tab3D() {
     return (
 
         <div className="contents">
-            <img className="ContentBg" src={BGG} alt="for 3D"/>
+            <img className="ContentBg" src={BGG} alt="for 3D" />
             <div className="content-view">
                 <Carousel className="main-slide">
                     <div>
@@ -42,7 +42,7 @@ export function Tab3D() {
                     </div>
                 </Carousel>
                 <div className="content-text">
-                    <button onClick={()=> backBtn(-2)}>Back</button>
+                    <button onClick={() => backBtn(-1)}>Back</button>
                     <p>Бүтээлийн нэр: <span>{isData1[3]}</span></p>
                     <p>Бүтээлийн төрөл: <b>{isData1[1]}</b></p>
                     <p>Дэлгэрэнгүй мэдээлэл: <b>{isData1[6]}</b></p>
