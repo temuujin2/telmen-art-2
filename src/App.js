@@ -5,7 +5,7 @@ import ChontLogo from './images/CHONT_LOGO_white.png'
 import Box from '@mui/material/Box';  
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
+import VerticalLinearStepper from './component/Stepper';
 
 import {
   Route,
@@ -23,6 +23,7 @@ import { About } from './pages/About';
 
 const style = {
   position: 'absolute',
+  borderRadius:'15px',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
@@ -83,11 +84,9 @@ const App = () => {
             >
               <Box sx={style}>
                 <Typography id="modal-modal-title" variant="h6" component="h2">
-                  Text in a modal
+                  Thank you for supporting me
                 </Typography>
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
+                <VerticalLinearStepper/>
               </Box>
             </Modal>
           </ul>
