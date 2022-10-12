@@ -2,12 +2,12 @@ import './App.css';
 import React from "react";
 import Data from './data/ImageData.json'
 import ChontLogo from './images/CHONT_LOGO_white.png'
-
-
+import Box from '@mui/material/Box';  
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
 
 import {
-  BrowserRouter as Router,
   Route,
   Link, Routes
 } from "react-router-dom";
@@ -21,8 +21,23 @@ import { Contact } from './pages/Contact';
 import { News } from './pages/News';
 import { About } from './pages/About';
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
 
 const App = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -59,7 +74,22 @@ const App = () => {
             <li>
               <Link to="/Contact">Холбоо барих</Link>
             </li>
-            <button>DONATE</button>
+            <button onClick={handleOpen}>DONATE</button>
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Text in a modal
+                </Typography>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                </Typography>
+              </Box>
+            </Modal>
           </ul>
         </nav>
         <Routes>
@@ -75,7 +105,7 @@ const App = () => {
         </Routes>
 
 
-        <span style={{ color: "white", paddingBottom: "20px", fontSize: "13px" }}>© Copyright All Rights Reserved | Telmen Bayasgalan 2022</span>
+        <span style={{ color: "white", paddingBottom: "20px", fontSize: "13px", marginTop:'50px' }}>© Copyright All Rights Reserved | Telmen Bayasgalan 2022</span>
       </div>
     </>
   );

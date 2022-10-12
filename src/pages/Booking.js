@@ -1,17 +1,49 @@
 
 import { MovieDataContext1 } from "../newContext"
-export function Booking() {
+import { useNavigate } from 'react-router-dom'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import BGG from '../images/BGGGG.png'
 
+
+export function Booking() {
+    const backBtn = useNavigate();
     const { isData1 } = MovieDataContext1()
     return (
         <div className="contents">
-            <img className="ContentBg" src={isData1[4]} alt="for 2D"/>
+            <img className="ContentBg" src={BGG} alt="for 2d"/>
             <div className="content-view">
-                <img src={isData1[4]} alt="for 2D" />
+                <Carousel className="main-slide">
+                    <div>
+                        <img src={isData1[4]} alt="for 2d" />
+                        <p className="legend">{isData1[2]}</p>
+                    </div>
+                    <div>
+                        <img src={isData1[4]} alt="for 2d" />
+                        <p className="legend">{isData1[2]}</p>
+                    </div>
+                    <div>
+                        <img src={isData1[4]} alt="for 2d" />
+                        <p className="legend">{isData1[2]}</p>
+                    </div>
+                    <div>
+                        <img src={isData1[4]} alt="for 2d" />
+                        <p className="legend">{isData1[2]}</p>
+                    </div>
+                    <div>
+                        <img src={isData1[4]} alt="for 2d" />
+                        <p className="legend">{isData1[2]}</p>
+                    </div>
+                    <div>
+                        <img src={isData1[4]} alt="for 2d" />
+                        <p className="legend">{isData1[2]}</p>
+                    </div>
+                </Carousel>
                 <div className="content-text">
-                    <p>Бүтээлийн нэр: &#160;&#160;&#160;<span>{isData1[2]}</span></p>
-                    <p>Бүтээлийн төрөл: &#160;&#160;&#160;<b>{isData1[0]}</b></p>
-                    <p>Дэлгэрэнгүй мэдээлэл: &#160;&#160;&#160;<b>{isData1[6]}</b></p>
+                    <button onClick={()=> backBtn(-2)}>Back</button>
+                    <p>Бүтээлийн нэр: <span>{isData1[2]}</span></p>
+                    <p>Бүтээлийн төрөл: <b>{isData1[0]}</b></p>
+                    <p>Дэлгэрэнгүй мэдээлэл: <b>{isData1[6]}</b></p>
                 </div>
             </div>
         </div>

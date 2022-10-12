@@ -3,6 +3,7 @@ import React from 'react'
 import videoBg from '../video/All_9generals_1_1.mp4'
 import imgBack from '../images/back-1.jpeg'
 import imgBack2 from '../images/back-2.jpeg'
+import hvree from '../images/hvree_har.png'
 import {
   Animator,
   ScrollContainer,
@@ -23,7 +24,9 @@ export const Home = () => {
   return (
     <ScrollContainer>
       <ScrollPage page={0}>
+
         <div className="main-video">
+        <div className='main-bg-hero'></div>
           <video src={videoBg} autoPlay muted loop />
         </div >
       </ScrollPage>
@@ -50,7 +53,7 @@ export const Home = () => {
               <button>more info</button>
             </div>
 
-            <img src={imgBack} alt="for image"/>
+            <img src={imgBack} alt="for background"/>
           </div>
         </Animator>
       </ScrollPage>
@@ -60,7 +63,7 @@ export const Home = () => {
           <div className='page-3'>
             <b style={{ color: "white" }}>Third Page</b>
 
-            <img src={imgBack2}alt="for image"/>
+            <img src={imgBack2}alt="for back-bg"/>
           </div>
         </Animator>
       </ScrollPage>

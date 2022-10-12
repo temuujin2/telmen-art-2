@@ -5,13 +5,14 @@ import insta from '../images/icons/instagram.png'
 import linkedin from '../images/icons/linkedin.png'
 import twitter from '../images/icons/twitter.png'
 import youtube from '../images/icons/youtube.png'
+import art from '../images/icons/art.png'
 
 export const Contact = () => {
     return (
         <div className='contact-wrapp'>
             <h4>CONTACT</h4>
             <div className='social-wrapp'>
-                <a href="https://www.behance.net" target="_blank"><img src={flaticon}></img></a>
+                <a href="https://www.artstation.com" target="_blank"><img src={art}></img></a>
                 <a href="https://www.instagram.com" target="_blank"><img src={insta}></img></a>
                 <a href="https://www.youtube.com" target="_blank"><img src={youtube}></img></a>
                 <a href="https://www.twitter.com" target="_blank"><img src={twitter}></img></a>

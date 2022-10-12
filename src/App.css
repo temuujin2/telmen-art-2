@@ -15,7 +15,16 @@ body {
   width: fit-content;
   height: 130vh;
   max-height: fit-content;
+  position: relative;
 }
+/* .main-bg-hero {
+  position: absolute;
+  background-image: url(../src/images/hvree_har.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+} */
 /* -------------       ------------- */
 .main {
   position: relative;
@@ -115,7 +124,7 @@ nav button:hover {
   font-size: 22px;
   font-weight: 500;
 }
-.main2 ul li:checked {
+.main2 ul li:hover {
   color: #00ffa3;
 }
 .main2 h1 {
@@ -249,8 +258,7 @@ nav button:hover {
 .ContentBg {
   position: absolute;
   left: 0;
-  top: -200px;
-  width: 100vw;
+  width: 100%;
   opacity: 0.1;
 }
 .kind {
@@ -265,13 +273,26 @@ nav button:hover {
 }
 .content-view {
   z-index: 2;
-  margin-top: 120px;
+  margin-top: 130px;
   display: flex;
+  justify-content: center;
   gap: 80px;
 
 }
-.content-view img {
-  width: 500px;
+.main-slide {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.carousel .thumb {
+  height: 80px;
+  width: 5%;
+}
+.carousel {
+  text-align: center;
 }
 .content-view p {
   color: white;
@@ -282,6 +303,24 @@ nav button:hover {
   gap: 20px;
   line-height: 30px;
   width: 350px;
+}
+.content-text button {
+  cursor: pointer;
+  padding: 5px 10px;
+  width: 100px;
+  border: none;
+  border-radius: 15px;
+  background: none;
+  border: 1px solid #00ffa3;
+  color: #00ffa3;
+  transition: all .6s ease-in-out;
+  transform: translateY(0);
+}
+.content-text button:hover {
+  color: black;
+  background: #00ffa3;
+  transform: translateX(8px);
+
 }
 .content-text b {
   color: rgb(0, 174, 255);
