@@ -40,7 +40,7 @@ export function Booking() {
                     </div>
                 </Carousel>
                 <div className="content-text">
-                    <button onClick={() => backBtn(-2)}>Back</button>
+                    <button onClick={() => backBtn(-1)}>Back</button>
                     <p>Бүтээлийн нэр: <span>{isData1[2]}</span></p>
                     <p>Бүтээлийн төрөл: <b>{isData1[0]}</b></p>
                     <p>Дэлгэрэнгүй мэдээлэл: <b>{isData1[6]}</b></p>
