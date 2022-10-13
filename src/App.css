@@ -13,13 +13,56 @@ body {
 }
 
 /* ------------Home video ---------- */
-.main video {
-  width: fit-content;
-  height: 130vh;
-  max-height: fit-content;
+.main-video {
   position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
 
+.main-video video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+.screen-items-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.screen-items-wrapp .biir  {
+  width: 100px;
+  margin-top: 100px;
+  opacity: 0.4;
+}
+.screen-items-wrapp .biir:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.screen-items-wrapp .generic {
+  width: 130px;
+  margin-top: 250px;
+  opacity: 0.4;
+} 
+.screen-items-wrapp .generic:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.screen-items-wrapp h1 {
+  font-size: 90px;
+}
 /* .main-bg-hero {
   position: absolute;
   background-image: url(../src/images/hvree_har.png);
@@ -40,8 +83,8 @@ body {
 
 nav {
   margin-top: 80px;
-  z-index: 2;
-  position: absolute;
+  z-index: 10;
+  position: fixed;
   display: flex;
   width: 95vw;
   max-width: 1600px;
@@ -50,14 +93,25 @@ nav {
 }
 
 .logo {
+  cursor: pointer;
   margin-top: 20px;
   font-size: 30px;
   font-weight: 700;
   color: white;
 }
 
-.logo img {
+.logo .top_logo1 {
   width: 80px;
+}
+.logo .top_logo2 {
+  width: 80px;
+  opacity: 0;
+}
+.logo:hover .top_logo1 {
+  display: none; 
+}
+.logo:hover .top_logo2 {
+  opacity: 1;
 }
 
 nav ul {
@@ -293,7 +347,7 @@ nav button:hover {
   position: absolute;
   left: 0;
   width: 100%;
-  opacity: 0.1;
+  height: fit-content;
 }
 
 .kind {
@@ -328,11 +382,20 @@ nav button:hover {
 
 .carousel .thumb {
   height: 80px;
-  width: 5%;
+  width: 20%;
 }
-
+.carousel .thumbs-wrapper.axis-vertical {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
 .carousel {
   text-align: center;
+  width: 100%;
+}
+.control-dots {
+  display: flex;
+  justify-content: center;
 }
 
 .content-view p {
@@ -341,6 +404,7 @@ nav button:hover {
 
 .content-text {
   display: flex;
+  align-items: center ;
   flex-direction: column;
   gap: 20px;
   line-height: 30px;
@@ -371,9 +435,7 @@ nav button:hover {
   color: rgb(0, 174, 255);
 }
 
-.content-text a {
-  color: gray;
-}
+
 
 /* ============== Coming page ==================== */
 .main-box-coming {
@@ -427,40 +489,75 @@ nav button:hover {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .page-2 img,
 .page-3 img {
+  position: absolute;
+}
+.bg-about-img {
   width: 100%;
 }
-
+.sarwuu {
+  width: 40%;
+  right: 5%;
+  top: 10%;
+}
 .avatar-circle {
-  position: absolute;
-  margin-top: 50px;
+  z-index: 5;
+  position: relative;
+  margin-top: 100px;
   width: 160px;
   height: 160px;
-  background: black;
+  background: #0a0a0c;
   border: 1px solid gray;
   border-radius: 50%;
+
+}
+.avatar-circle img {
+  position: absolute;
+  right: -110px;
+  top: -45px;
+  z-index: 5;
+  width: 380px;
+  height: 230px;
 }
 
 .page-2-text {
+  z-index: 10;
   left: 300px;
   color: white;
-  top: 260px;
+  top: 360px;
   position: absolute;
 }
 
 .page-2-text b {
   font-size: 40px;
-
+  font-weight: 500;
 }
-
+.page-2-p {
+  margin-top: 100px;
+}
 .page-2-text p {
   font-size: 18px;
   margin-top: 5px;
 }
-
+.page-2-text button {
+  cursor: pointer;
+  margin-top: 100px;
+  border: none;
+  padding: 7px 15px;
+  border: 1px solid lightgray;
+  background: none;
+  color: lightgray;
+  border-radius: 15px;
+}
+.page-2-text button:hover {
+  background: lightgray;
+  color: black;
+  transition: all .4s ease-in-out;
+}
 /* ----------- About ------- */
 .about-container {
   position: relative;
@@ -468,7 +565,7 @@ nav button:hover {
   flex-wrap: wrap;
   justify-content: center;
   width: 100vw;
-
+  height: 100vh;
 }
 
 .about-container h2 {
@@ -520,7 +617,6 @@ nav button:hover {
 .tabs__radio2:checked+.tabs__label-2 {
   color: #00ffa3;
 }
-
 .tabs__radio2:checked+.tabs__label-2+.tabs__content-2 {
   display: block;
 }
@@ -763,8 +859,8 @@ form span {
 }
 
 .grid-text-shop p {
-  font-size: 13px;
-  color: gray;
+  font-size: 14px;
+  color: rgb(180, 180, 180);
 }
 
 .grid-text-shop span {
@@ -813,4 +909,11 @@ form span {
   z-index: 5;
   transform: scale(1.08);
   transition-delay: 0ms, 0ms;
+}
+/* ========= About section ====== */
+.about_wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ShopData from '../data/ShopData.json'
+import ShopPrint from '../data/ShopDataTshirt.json'
 import { useNavigate } from 'react-router-dom'
 import imgBack_about from '../images/BGGGG.png'
 import { ShopDataContext } from '../ShopDataContext'
@@ -25,8 +26,8 @@ export const Shop = () => {
         <div className="about-container">
             <h2>SHOP</h2>
             {/* ------- tab 1 ------ */}
-            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-1' />
-            <label for="tab-1" className='tabs__label-2'>PRINTS</label>
+            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-1'/>
+            <label for="tab-1" className='tabs__label-2' >PRINTS</label>
             <div className="tabs__content-2" style={{ color: "white" }}>
                 <div className='flex-wrapper-shop'>
                     {ShopData && ShopData.map(data => {
@@ -52,7 +53,7 @@ export const Shop = () => {
             <label for="tab-2" className='tabs__label-2'>3D MODELS</label>
             <div className="tabs__content-2" style={{ color: "white" }}>
                 <div className='flex-wrapper-shop'>
-                    {ShopData && ShopData.map(data => {
+                    {ShopPrint && ShopPrint.map(data => {
                         let arr = [data.id, data.kind, data.name,
                         data.available, data.image, data.title]
                         return (

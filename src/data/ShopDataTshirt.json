@@ -2,9 +2,9 @@
     {
         "id": 1,
         "kind": "Tshirt",
-        "name": "Savage printed Tshirt",
+        "name": "New tshirt",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -24,7 +24,7 @@
         "kind": "Tshirt",
         "name": "Tshirt",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -44,7 +44,7 @@
         "kind": "Tshirt",
         "name": "Tshirt print",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -54,7 +54,7 @@
         "kind": "T shirt",
         "name": "Tshirt print",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -64,7 +64,7 @@
         "kind": "Tshirt",
         "name": "Tshirt print",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -74,7 +74,7 @@
         "kind": "Tshirt",
         "name": "Tshirt print",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -84,7 +84,7 @@
         "kind": "Tshirt",
         "name": "Savage digital printed Tshirt",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]
@@ -94,7 +94,7 @@
         "kind": "Tshirt",
         "name": "Savage art printed Tshirt",
         "available": "available",
-        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Fgreen.jpg?alt=media&token=8293c146-c621-4264-902a-a5c560ac48d4",
+        "image": "https://firebasestorage.googleapis.com/v0/b/image-storage-4e10e.appspot.com/o/Shop%20images%2Ftshirt.png?alt=media&token=e30d19c0-4f78-42fb-affa-ffff5f255564",
         "title": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         ]

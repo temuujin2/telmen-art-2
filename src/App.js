@@ -1,30 +1,31 @@
 import './App.css';
 import React from "react";
-import Data from './data/ImageData.json'
-import ChontLogo from './images/CHONT_LOGO_white.png'
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import Data from './data/ImageData.json';
+import Logo_1 from './images/Logo-1.png';
+import Typography from '@mui/material/Typography';
+import ChontLogo from './images/CHONT_LOGO_white.png';
 import VerticalLinearStepper from './component/Stepper';
 
 import {
   Route,
   Link, Routes
 } from "react-router-dom";
-import { Portfolio } from "./pages/Portfolio";
+import { News } from './pages/News';
 import { Shop } from "./pages/Shop";
-import { Booking } from "./pages/Booking";
 import { Home } from "./pages/Home";
 import { Tab3D } from './pages/Tab3D';
-import { Totems } from './pages/Totems';
-import { Contact } from './pages/Contact';
-import { News } from './pages/News';
 import { About } from './pages/About';
 import { Print } from './pages/Print';
-import { Models } from './pages/Models';
-import { Collectibles } from './pages/Collectibles';
 import { Merch } from './pages/Merch';
+import { Totems } from './pages/Totems';
+import { Models } from './pages/Models';
+import { Booking } from "./pages/Booking";
+import { Contact } from './pages/Contact';
+import { Portfolio } from "./pages/Portfolio";
 import { Tutorials } from './pages/Tutorials';
+import { Collectibles } from './pages/Collectibles';
 
 const style = {
   position: 'absolute',
@@ -52,7 +53,8 @@ const App = () => {
 
         <nav>
           <div className='logo'>
-            <img src={ChontLogo} alt="Chont Art Logo" />
+            <img className='top_logo1' src={ChontLogo} alt="Chont Art Logo" />
+            <img className='top_logo2' src={Logo_1} alt="Chont Art Logo" />
 
           </div>
 
@@ -97,20 +99,20 @@ const App = () => {
           </ul>
         </nav>
         <Routes>
-          <Route path="/Booking" element={<Booking data={Data} />} />
-          <Route path="/Portfolio" element={<Portfolio data={Data} />} />
-          <Route path="/Totems" element={<Totems />} />
-          <Route path="/Tab3D" element={<Tab3D data={Data} />} />
-          <Route path="/Shop" element={<Shop />} />
-          <Route path="/Print" element={<Print data={Data} />} />
-          <Route path="/Models" element={<Models data={Data} />} />
-          <Route path="/Collectibles" element={<Collectibles data={Data} />} />
-          <Route path="/Merch" element={<Merch data={Data} />} />
-          <Route path="/Tutorials" element={<Tutorials data={Data} />} />
-          <Route path="/Contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
+          <Route path="/Shop" element={<Shop />} />
           <Route path="/News" element={<News />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Totems" element={<Totems />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Print" element={<Print data={Data} />} />
+          <Route path="/Tab3D" element={<Tab3D data={Data} />} />
+          <Route path="/Merch" element={<Merch data={Data} />} />
+          <Route path="/Models" element={<Models data={Data} />} />
+          <Route path="/Booking" element={<Booking data={Data} />} />
+          <Route path="/Portfolio" element={<Portfolio data={Data} />} />
+          <Route path="/Tutorials" element={<Tutorials data={Data} />} />
+          <Route path="/Collectibles" element={<Collectibles data={Data} />} />
         </Routes>
 
 
