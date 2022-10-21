@@ -11,12 +11,12 @@ export const Contact = () => {
         <div className='contact-wrapp'>
             <h4>CONTACT</h4>
             <div className='social-wrapp'>
-                <a href="https://www.artstation.com" target="_blank"><img src={art}></img></a>
-                <a href="https://www.instagram.com" target="_blank"><img src={insta}></img></a>
-                <a href="https://www.youtube.com" target="_blank"><img src={youtube}></img></a>
-                <a href="https://www.twitter.com" target="_blank"><img src={twitter}></img></a>
-                <a href="https://www.linkedin.com" target="_blank"><img src={linkedin}></img></a>
-                <a href="https://www.facebook.com" target="_blank"><img src={face}></img></a>
+                <a href="https://www.artstation.com" rel="noreferrer" target="_blank"><img src={art} alt='for contact'></img></a>
+                <a href="https://www.instagram.com" rel="noreferrer" target="_blank"><img src={insta} alt='for contact'></img></a>
+                <a href="https://www.youtube.com" rel="noreferrer" target="_blank"><img src={youtube} alt='for contact'></img></a>
+                <a href="https://www.twitter.com" rel="noreferrer" target="_blank"><img src={twitter} alt='for contact'></img></a>
+                <a href="https://www.linkedin.com" rel="noreferrer" target="_blank"><img src={linkedin} alt='for contact'></img></a>
+                <a href="https://www.facebook.com" rel="noreferrer" target="_blank"><img src={face} alt='for contact'></img></a>
             </div>
             <form>
                 <div className='input-wrapp'>
@@ -47,7 +47,7 @@ export const Contact = () => {
                 </div>
             </form>
 
-            <img className="back-img-totem" src={imgBack_about}></img>
+            <img className="back-img-totem" src={imgBack_about} alt="for background"></img>
         </div>
     )
 }
