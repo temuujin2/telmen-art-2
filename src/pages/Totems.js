@@ -102,7 +102,7 @@ export const Totems = () => {
 
 
 
-            <img className="back-img-totem" src={imgBack_about} alt="for totem"/>
+            <img className="back-img-totem" src={imgBack_about}></img>
         </section>
     )
 }

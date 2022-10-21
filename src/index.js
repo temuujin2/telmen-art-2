@@ -6,18 +6,21 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ShopProvider } from './ShopDataContext';
 import { MovieProvider1 } from "./newContext"
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ShopProvider>
-        <MovieProvider1>
-
-          <App />
-        </MovieProvider1>
-      </ShopProvider>
-    </BrowserRouter>
+    <PayPalScriptProvider
+      options={{ "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID }}>
+      <BrowserRouter>
+        <ShopProvider>
+          <MovieProvider1>
+           <App />
+          </MovieProvider1>
+        </ShopProvider>
+      </BrowserRouter>
+    </PayPalScriptProvider>
   </React.StrictMode>
 );
 

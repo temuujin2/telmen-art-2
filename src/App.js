@@ -3,7 +3,7 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Data from './data/ImageData.json';
-import Logo_1 from './images/Logo-1.png';
+import Stamp from './images/Stamp.png';
 import Typography from '@mui/material/Typography';
 import ChontLogo from './images/CHONT_LOGO_white.png';
 import VerticalLinearStepper from './component/Stepper';
@@ -51,11 +51,13 @@ const App = () => {
       <div className='main'>
 
 
+          <div className='nav_shadow'></div>
         <nav>
           <div className='logo'>
-            <img className='top_logo1' src={ChontLogo} alt="Chont Art Logo" />
-            <img className='top_logo2' src={Logo_1} alt="Chont Art Logo" />
-
+            <a href='/'>
+              <img className='top_logo1' src={ChontLogo} alt="Chont Art Logo" />
+              <img className='top_logo2' src={Stamp} alt="Chont Art Logo" />
+            </a>
           </div>
 
           <ul>

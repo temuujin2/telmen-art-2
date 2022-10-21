@@ -2,7 +2,6 @@ import { MovieDataContext1 } from "../newContext"
 import { useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import BGG from '../images/BGGGG.png'
 
 
 
@@ -13,7 +12,6 @@ export function Tab3D() {
     return (
 
         <div className="contents">
-            <img className="ContentBg" src={BGG} alt="for 3D" />
             <div className="content-view">
                 <Carousel className="main-slide">
                     <div>

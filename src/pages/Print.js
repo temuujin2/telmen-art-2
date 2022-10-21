@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import BGG from '../images/BGGGG.png'
+import React, { useState } from "react";
+import PaypalCheckoutButton from "../component/PaypalCheckoutButton";
 
 
 
@@ -10,6 +12,10 @@ import BGG from '../images/BGGGG.png'
 export const Print = () => {
     const backBtn = useNavigate();
     const { isShopData } = ShopDataContext();
+    const product = {
+        description: "Design+Code React Hooks Course",
+        price: 19
+    };
     return (
 
         <div className="contents">
@@ -39,6 +45,9 @@ export const Print = () => {
                     <p>Product kind: <b>{isShopData[1]}</b></p>
                     <p>Title: <b>{isShopData[5]}</b></p>
                     <p>Available: <b>{isShopData[5]}</b></p>
+                    <div className="paypal-button-container2" >
+                        <PaypalCheckoutButton product={product} />
+                    </div >
                 </div>
             </div>
         </div>

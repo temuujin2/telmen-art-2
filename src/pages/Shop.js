@@ -4,6 +4,7 @@ import ShopPrint from '../data/ShopDataTshirt.json'
 import { useNavigate } from 'react-router-dom'
 import imgBack_about from '../images/BGGGG.png'
 import { ShopDataContext } from '../ShopDataContext'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
 
@@ -23,12 +24,18 @@ export const Shop = () => {
     if (isNavigate5) return navigate('/Tutorials');
 
     return (
-        <div className="about-container">
+        <Tabs>
+            <div className="about-container">
             <h2>SHOP</h2>
+                <TabList>
+                    <Tab>PRINTS</Tab>
+                    <Tab>3D MODELS</Tab>
+                    <Tab>COLLECTIBLES</Tab>
+                    <Tab>MERCH</Tab>
+                    <Tab>TUTORIALS</Tab>
+                </TabList>
             {/* ------- tab 1 ------ */}
-            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-1'/>
-            <label for="tab-1" className='tabs__label-2' >PRINTS</label>
-            <div className="tabs__content-2" style={{ color: "white" }}>
+            <TabPanel>
                 <div className='flex-wrapper-shop'>
                     {ShopData && ShopData.map(data => {
                         let arr = [data.id, data.kind, data.name,
@@ -47,11 +54,9 @@ export const Shop = () => {
                         )
                     })}
                 </div>
-            </div>
+            </TabPanel>
             {/* ------- tab 2 ------ */}
-            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-2' />
-            <label for="tab-2" className='tabs__label-2'>3D MODELS</label>
-            <div className="tabs__content-2" style={{ color: "white" }}>
+            <TabPanel>
                 <div className='flex-wrapper-shop'>
                     {ShopPrint && ShopPrint.map(data => {
                         let arr = [data.id, data.kind, data.name,
@@ -70,11 +75,9 @@ export const Shop = () => {
                         )
                     })}
                 </div>
-            </div>
+            </TabPanel>
             {/* ------- tab 3 ------ */}
-            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-3' />
-            <label for="tab-3" className='tabs__label-2'>COLLECTIBLES</label>
-            <div className="tabs__content-2" style={{ color: "white" }}>
+            <TabPanel>
                 <div className='flex-wrapper-shop'>
                     {ShopData && ShopData.map(data => {
                         let arr = [data.id, data.kind, data.name,
@@ -93,11 +96,9 @@ export const Shop = () => {
                         )
                     })}
                 </div>
-            </div>
+            </TabPanel>
             {/* ------- tab 4 ------ */}
-            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-4' />
-            <label for="tab-4" className='tabs__label-2'>MERCH</label>
-            <div className="tabs__content-2" style={{ color: "white" }}>
+            <TabPanel>
                 <div className='flex-wrapper-shop'>
                     {ShopData && ShopData.map(data => {
                         let arr = [data.id, data.kind, data.name,
@@ -116,11 +117,9 @@ export const Shop = () => {
                         )
                     })}
                 </div>
-            </div>
+            </TabPanel>
             {/* ------- tab 5 ------ */}
-            <input type="radio" className='tabs__radio2' name='tabs-example' id='tab-5' />
-            <label for="tab-5" className='tabs__label-2'>TUTORIALS</label>
-            <div className="tabs__content-2" style={{ color: "white" }}>
+            <TabPanel>
                 <div className='flex-wrapper-shop'>
                     {ShopData && ShopData.map(data => {
                         let arr = [data.id, data.kind, data.name,
@@ -139,11 +138,13 @@ export const Shop = () => {
                         )
                     })}
                 </div>
+            </TabPanel>
+
+
+
+            <img className="back-img-totem" src={imgBack_about}></img>
+
             </div>
-
-
-
-            <img style={{ zIndex: '-5' }} src={imgBack_about} alt="background"></img>
-        </div>
+        </Tabs>
     )
 }

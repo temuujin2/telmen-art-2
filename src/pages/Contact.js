@@ -1,6 +1,5 @@
 import imgBack_about from '../images/BGGGG.png'
 import face from '../images/icons/facebook.png'
-import flaticon from '../images/icons/flaticon.png'
 import insta from '../images/icons/instagram.png'
 import linkedin from '../images/icons/linkedin.png'
 import twitter from '../images/icons/twitter.png'

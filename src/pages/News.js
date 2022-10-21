@@ -1,4 +1,5 @@
-import BGG from '../images/BGGGG.png'
+import imgBack_about from '../images/BGGGG.png'
+
 
 
 
@@ -9,7 +10,7 @@ export const News = () => {
 
 
 
-            <img className="ContentBg" src={BGG} alt="for 3D" />
+            <img className="back-img-totem" src={imgBack_about}></img>
         </div>
     )
 }
