@@ -1,12 +1,10 @@
 
 import { MovieDataContext1 } from "../newContext"
-import { useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
 
 export function Booking() {
-    const backBtn = useNavigate();
     const { isData1 } = MovieDataContext1()
     return (
         <div className="contents">
@@ -38,8 +36,7 @@ export function Booking() {
                     </div>
                 </Carousel>
                 <div className="content-text">
-                    <button onClick={() => backBtn(-1)}>Back</button>
-                    <p>Бүтээлийн нэр: <span>{isData1[2]}</span></p>
+                    <p><span>{isData1[2]}</span></p>
                     <p>Бүтээлийн төрөл: <b>{isData1[0]}</b></p>
                     <p>Дэлгэрэнгүй мэдээлэл: <b>{isData1[6]}</b></p>
                 </div>

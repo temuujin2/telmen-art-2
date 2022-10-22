@@ -1,11 +1,7 @@
 import React from "react";
 import imgBack_about from '../images/BGGGG.png'
 import totem from '../images/Leopart_Totem.png'
-import check1 from '../images/check-mark.png'
-import check2 from '../images/check.png'
-import check3 from '../images/shield.png'
 import check4 from '../images/task.png'
-import check5 from '../images/validity.png'
 
 
 export const Totems = () => {
@@ -68,31 +64,31 @@ export const Totems = () => {
                         </tr>
                         <tr>
                             <td>15%</td>
-                            <td><img src={check1} alt="for totem"/></td>
-                            <td><img src={check1} alt="for totem"/></td>
-                            <td><img src={check1} alt="for totem"/></td>
-                            <td><img src={check1} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
                         </tr>
                         <tr>
                             <td>30%</td>
-                            <td><img src={check2} alt="for totem"/></td>
-                            <td><img src={check2} alt="for totem"/></td>
-                            <td><img src={check2} alt="for totem"/></td>
-                            <td><img src={check2} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
                         </tr>
                         <tr>
                             <td>45%</td>
-                            <td><img src={check3} alt="for totem"/></td>
-                            <td><img src={check3} alt="for totem"/></td>
-                            <td><img src={check3} alt="for totem"/></td>
-                            <td><img src={check3} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
                         </tr>
                         <tr>
                             <td>60%</td>
                             <td><img src={check4} alt="for totem"/></td>
                             <td><img src={check4} alt="for totem"/></td>
-                            <td><img src={check5} alt="for totem"/></td>
-                            <td><img src={check5} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
+                            <td><img src={check4} alt="for totem"/></td>
                         </tr>
                     </table>
 
@@ -102,7 +98,7 @@ export const Totems = () => {
 
 
 
-            <img className="back-img-totem" src={imgBack_about}></img>
+            <img className="back-img-totem" src={imgBack_about} alt="background"></img>
         </section>
     )
 }

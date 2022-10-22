@@ -1,5 +1,4 @@
 import { MovieDataContext1 } from "../newContext"
-import { useNavigate } from 'react-router-dom'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
@@ -7,7 +6,6 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 export function Tab3D() {
-    const backBtn = useNavigate();
     const { isData1 } = MovieDataContext1();
     return (
 
@@ -40,8 +38,7 @@ export function Tab3D() {
                     </div>
                 </Carousel>
                 <div className="content-text">
-                    <button onClick={() => backBtn(-1)}>Back</button>
-                    <p>Бүтээлийн нэр: <span>{isData1[3]}</span></p>
+                    <p><span>{isData1[3]}</span></p>
                     <p>Бүтээлийн төрөл: <b>{isData1[1]}</b></p>
                     <p>Дэлгэрэнгүй мэдээлэл: <b>{isData1[6]}</b></p>
                 </div>

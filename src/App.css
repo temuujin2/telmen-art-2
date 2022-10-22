@@ -411,7 +411,7 @@ nav button:hover {
 
 .content-view {
   z-index: 2;
-  margin-top: 130px;
+  margin-top: 160px;
   margin-bottom: 80px;
   display: flex;
   justify-content: center;
@@ -479,9 +479,13 @@ nav button:hover {
   transform: translateX(8px);
 
 }
-
+.content-text p span {
+  font-size: 25px;
+  font-weight: 500;
+}
 .content-text b {
   color: rgb(0, 174, 255);
+  font-weight: 200;
 }
 
 
@@ -972,4 +976,29 @@ form span {
   font-weight: 500;
   color: #00ffa3;
 }
+.text_wrapp_about {
+  display: flex;
+  margin-top: 80px;
+  width: 70vw;
+}
+.text_wrapp_about p {
+  width: 34%;
+  text-align: justify;
+  line-height: 2;
+}
 /* ========= paypal button ======= */
+.paypal-button-container2 {
+  width: 200px;
+  height: 95px;
+  overflow: hidden;
+}
+.paypal-button-container2 .no-paypal {
+  text-align: center;
+  padding-top: 10px;
+  z-index: 111;
+  position: absolute;
+  width: 200px;
+  border-radius: 20px;
+  height: 40px;
+  background: white;
+}
