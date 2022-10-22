@@ -10,7 +10,7 @@ export const News = () => {
 
 
 
-            <img className="back-img-totem" src={imgBack_about}></img>
+            <img className="back-img-totem" src={imgBack_about} alt="background"></img>
         </div>
     )
 }

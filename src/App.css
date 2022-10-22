@@ -10,7 +10,13 @@ body {
   justify-content: center;
   background: rgb(15, 16, 24);
 }
-
+.scroll-btn {
+  z-index: 10;
+  opacity: 0.4;
+}
+.scroll-btn:hover {
+  opacity: 1;
+}
 /* ------------Home video ---------- */
 .main-video {
   position: relative;
@@ -590,7 +596,7 @@ nav button:hover {
   font-weight: 500;
 }
 .page-2-p {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .page-2-text p {
   font-size: 18px;
@@ -598,7 +604,7 @@ nav button:hover {
 }
 .page-2-text button {
   cursor: pointer;
-  margin-top: 100px;
+  margin-top: 80px;
   border: none;
   padding: 7px 15px;
   border: 1px solid lightgray;
@@ -995,7 +1001,7 @@ form span {
 .paypal-button-container2 .no-paypal {
   text-align: center;
   padding-top: 10px;
-  z-index: 111;
+  z-index: 999;
   position: absolute;
   width: 200px;
   border-radius: 20px;

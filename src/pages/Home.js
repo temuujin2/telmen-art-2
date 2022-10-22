@@ -1,5 +1,7 @@
 
 import React from 'react'
+import { useEffect } from 'react'
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import generic from '../images/generic-portfolio.png'
 import videoBg from '../video/All_9generals_1_1.mp4'
 import imgBack2 from '../images/back-2.jpeg'
@@ -16,15 +18,15 @@ import {
   FadeIn,
   Move,
   MoveIn,
-  Sticky,
-  ZoomOut,
-  FadeOut
 } from "react-scroll-motion";
 
-const ZoomInScrollOut = batch(Sticky(), Fade(), ZoomOut());
 const FadeUp = batch(Fade(), MoveIn());
 
 export const Home = () => {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   return (
     <ScrollContainer>
       <ScrollPage page={0}>
@@ -80,6 +82,27 @@ export const Home = () => {
         </Animator>
       </ScrollPage>
       {/* ----------------------- Page 4 -------------------- */}
+
+      {/* 👇️ scroll to top on button click */}
+      <button className='scroll-btn'
+        onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}
+        style={{
+          position: 'fixed',
+          padding:'5px 10px 0 10px',
+          fontSize: '20px',
+          bottom: '40px',
+          right: '40px',
+          backgroundColor: 'rgb(31, 32, 39)',
+          color: '#fff',
+          textAlign: 'center',
+          border: 'none',
+          borderRadius:'10px'
+        }}
+      >
+        <ExpandLessIcon />
+      </button>
 
     </ScrollContainer>
 
