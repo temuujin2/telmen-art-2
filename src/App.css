@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 
 }
-
 body {
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background: rgb(15, 16, 24);
 }
 .scroll-btn {
@@ -16,6 +21,15 @@ body {
 }
 .scroll-btn:hover {
   opacity: 1;
+}
+.main-image-scroll,
+.main-image-scroll1,
+.main-image-scroll2,
+.main-image-scroll3,
+.main-image-scroll4 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00ffa3;
 }
 /* ------------Home video ---------- */
 .main-video {
@@ -171,8 +185,14 @@ nav button:hover {
 
 }
 
-/* ============ video ============== */
-
+/* ============ Footer ============== */
+.footer {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  margin-top: 100px;
+  opacity: 0.7;
+}
 
 
 /* =================== content =============== */
@@ -182,8 +202,7 @@ nav button:hover {
   height: auto;
   overflow-y: scroll;
   flex-wrap: wrap;
-  padding-bottom: 50px;
-
+  padding-bottom: 120px;
 }
 
 .main2 ul {
@@ -240,7 +259,7 @@ nav button:hover {
   justify-content: center;
   height: auto;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  margin-bottom: 200px;
 
 }
 
@@ -418,7 +437,7 @@ nav button:hover {
 .content-view {
   z-index: 2;
   margin-top: 160px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -457,12 +476,13 @@ nav button:hover {
 
 .content-view p {
   color: white;
+  line-height: 40px;
 }
 
 .content-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   width: 350px;
 }
 
@@ -617,6 +637,61 @@ nav button:hover {
   color: black;
   transition: all .4s ease-in-out;
 }
+.page-3  b {
+  z-index: 5;
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  top: 40%;
+  left: 10%;
+}
+.page-3 img {
+  width: 100vw;
+}
+.page-4 b{
+  z-index: 5;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 20%;
+}
+.page-4 button {
+  position: absolute;
+  top: 75%;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 15px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+.home-shop-btn,
+.totem-shop-btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 60%;
+  color: white;
+  top: 260px;
+  font-size: 25px;
+}
+.home-shop-btn img {
+  margin-top: -70px;
+  width: 250px;
+}
+.shape-shop {
+  margin-top: 40px;
+  width: 150px;
+  height: 150px;
+  background: black;
+  border-radius: 30px;
+  border: 2px solid #00ffa3;
+}
+.page-6 button {
+  position: absolute;
+}
 /* ----------- About ------- */
 .about-container {
   position: relative;
@@ -679,7 +754,22 @@ nav button:hover {
 .tabs__radio2:checked+.tabs__label-2+.tabs__content-2 {
   display: block;
 }
+/* =========== News ================ */
+.news-wrapp {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
 
+.news-wrapp h2 {
+  color: #00ffa3;
+  font-size: 33px;
+  font-weight: 500;
+}
 /* =========== Totems ============== */
 section {
   position: relative;
@@ -703,6 +793,7 @@ section {
   text-align: center;
   flex-direction: column;
   margin-top: 120px;
+  padding-bottom: 120px;
 }
 
 .totems-wrapp h2 {
@@ -790,6 +881,7 @@ table img {
 /* ======== Contact ========= */
 .contact-wrapp {
   margin-top: 120px;
+  margin-bottom: 200px;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -976,6 +1068,8 @@ form span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
+
 }
 .about_wrapper h4 {
   font-size: 33px;
@@ -984,7 +1078,7 @@ form span {
 }
 .text_wrapp_about {
   display: flex;
-  margin-top: 80px;
+  margin-top: 120px;
   width: 70vw;
 }
 .text_wrapp_about p {
@@ -1000,6 +1094,7 @@ form span {
 }
 .paypal-button-container2 .no-paypal {
   text-align: center;
+  font-weight: 500;
   padding-top: 10px;
   z-index: 999;
   position: absolute;

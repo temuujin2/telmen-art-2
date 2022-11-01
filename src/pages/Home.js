@@ -4,7 +4,9 @@ import { useEffect } from 'react'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import generic from '../images/generic-portfolio.png'
 import videoBg from '../video/All_9generals_1_1.mp4'
-import imgBack2 from '../images/back-2.jpeg'
+import Tenger from '../images/Tengeriin_Daira.png'
+import totem from '../images/Leopart_Totem.png'
+import subeedei from '../images/Subegedei.png'
 import Portrait from '../images/Portrait.png'
 import Sarwuu from '../images/Sarwuu.png'
 import About from '../images/About.png'
@@ -18,6 +20,7 @@ import {
   FadeIn,
   Move,
   MoveIn,
+  ZoomIn,
 } from "react-scroll-motion";
 
 const FadeUp = batch(Fade(), MoveIn());
@@ -56,6 +59,7 @@ export const Home = () => {
             <div className='page-2-text'>
               <Animator animation={batch(FadeIn(), Move(0, 1000))}>
                 <b>Brief</b>
+                <Animator animation={ZoomIn}>
                 <div className='page-2-p'>
                   <p>Hello everyone! My name's Telmen Bayasgalan</p>
                   <p>I'm a digital artist</p>
@@ -63,6 +67,7 @@ export const Home = () => {
                   <p>Truly, I self-taught about "CG art".</p>
                   <p>It's give me a chance that l float on my imagination.</p>
                 </div>
+                </Animator>
                 <button>more info</button>
               </Animator>
             </div>
@@ -75,15 +80,66 @@ export const Home = () => {
       <ScrollPage page={2}>
         <Animator animation={FadeUp}>
           <div className='page-3'>
-            <b style={{ color: "white" }}>Third Page</b>
+            <b>Stl, Obj files</b>
 
-            <img src={imgBack2}alt="for back-bg"/>
+            <img src={subeedei}alt="for back-bg"/>
           </div>
         </Animator>
       </ScrollPage>
       {/* ----------------------- Page 4 -------------------- */}
-
-      {/* 👇️ scroll to top on button click */}
+      <ScrollPage page={2}>
+        <Animator animation={FadeUp}>
+          <div className='page-4'>
+            <b>Shop</b>
+            <div className='home-shop-btn'>
+              <div>Prints
+                <div className='shape-shop'></div>
+              </div>
+              <div>3D model
+                <div className='shape-shop'></div>
+              </div>
+              <div>Collectibles
+                <div className='shape-shop'></div>
+              </div>
+              <div>Merch
+                <div className='shape-shop'></div>
+              </div>
+              <div>Tutorials
+                <div className='shape-shop'></div>
+              </div>
+            </div>
+            <img src={subeedei}alt="for back-bg"/>
+          </div>
+        </Animator>
+      </ScrollPage>
+      {/* ----------------------- Page 5 -------------------- */}
+      <ScrollPage page={2}>
+        <Animator animation={FadeUp}>
+          <div className='page-3'>
+            <b>You can buy my limited art prints</b>
+            <img src={Tenger} alt="for back-bg"/>
+          </div>
+        </Animator>
+      </ScrollPage>
+      {/* ----------------------- Page 6 -------------------- */}
+      <ScrollPage page={2}>
+        <Animator animation={FadeUp}>
+          <div className='page-4'>
+            <b>Totems</b>
+            <div className='home-shop-btn'>
+              <div className='home-totem-wrapp'>
+                <img src={totem} alt="for totem"/>
+                <img src={totem} alt="for totem"/>
+                <img src={totem} alt="for totem"/>
+                <img src={totem} alt="for totem"/>
+              </div>
+            </div>
+              <button>learn more</button>
+            <img src={Tenger}alt="for back-bg"/>
+          </div>
+        </Animator>
+      </ScrollPage>
+      {/* scroll to top on button click */}
       <button className='scroll-btn'
         onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});

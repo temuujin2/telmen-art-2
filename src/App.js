@@ -118,7 +118,7 @@ const App = () => {
         </Routes>
 
 
-        <span style={{ color: "white", paddingBottom: "20px", fontSize: "13px", marginTop: '50px' }}>© Copyright All Rights Reserved | Telmen Bayasgalan 2022</span>
+        <span className='footer' style={{ color: "white", paddingBottom: "20px", fontSize: "13px", marginTop: '50px' }}>© Copyright All Rights Reserved | Telmen Bayasgalan 2022</span>
       </div>
     </>
   );
