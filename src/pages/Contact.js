@@ -5,8 +5,29 @@ import linkedin from '../images/icons/linkedin.png'
 import twitter from '../images/icons/twitter.png'
 import youtube from '../images/icons/youtube.png'
 import art from '../images/icons/art.png'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_qgyablm',
+            'template_sgwwoie',
+            form.current,
+            'AFAlw2B2klQDevaSf'
+        )
+            .then((result) => {
+                console.log(result.text);
+                alert("Message sent");
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
         <div className='contact-wrapp'>
             <h4>CONTACT</h4>
@@ -18,15 +39,15 @@ export const Contact = () => {
                 <a href="https://www.linkedin.com" rel="noreferrer" target="_blank"><img src={linkedin} alt='for contact'></img></a>
                 <a href="https://www.facebook.com" rel="noreferrer" target="_blank"><img src={face} alt='for contact'></img></a>
             </div>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
                 <div className='input-wrapp'>
                     <label>
                         FIRST AND LAST NAME
-                        <input></input>
+                        <input type="text" name="user_name"></input>
                     </label>
                     <label>
                         EMAIL ADDRESS
-                        <input></input>
+                        <input type="email" name="user_email"></input>
                     </label>
                     <label>
                         SUBJECT
@@ -40,10 +61,10 @@ export const Contact = () => {
                 </div>
                 <div className='subject-input'>
                     <label>
-                        SUBJECT
-                        <input></input>
+                        MESSAGE
+                        <textarea name="message" />
                     </label>
-                    <button>send message</button>
+                    <button type="submit" value="Send">Send</button>
                 </div>
             </form>
 

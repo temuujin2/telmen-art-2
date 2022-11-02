@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 
 }
+
 body {
 
   display: flex;
@@ -15,13 +17,16 @@ body {
   align-items: center;
   background: rgb(15, 16, 24);
 }
+
 .scroll-btn {
   z-index: 10;
   opacity: 0.4;
 }
+
 .scroll-btn:hover {
   opacity: 1;
 }
+
 .main-image-scroll,
 .main-image-scroll1,
 .main-image-scroll2,
@@ -31,6 +36,7 @@ body {
   height: 100vh;
   background-color: #00ffa3;
 }
+
 /* ------------Home video ---------- */
 .main-video {
   position: relative;
@@ -48,6 +54,7 @@ body {
   object-fit: cover;
   z-index: -10;
 }
+
 .screen-items-wrapp {
   display: flex;
   align-items: center;
@@ -59,18 +66,21 @@ body {
   height: 100%;
   color: white;
 }
-.screen-items-wrapp .biir  {
+
+.screen-items-wrapp .biir {
   width: 100px;
   margin-top: 100px;
 }
+
 .screen-items-wrapp .generic {
   width: 130px;
   margin-top: 250px;
-} 
+}
 
 .screen-items-wrapp h1 {
   font-size: 90px;
 }
+
 /* .main-bg-hero {
   position: absolute;
   background-image: url(../src/images/hvree_har.png);
@@ -100,6 +110,7 @@ nav {
   margin: auto;
   justify-content: space-between;
 }
+
 .nav_shadow {
   position: absolute;
   left: 0;
@@ -110,6 +121,7 @@ nav {
   height: 200px;
   z-index: -4;
 }
+
 .logo {
   cursor: pointer;
   margin-top: 20px;
@@ -121,14 +133,17 @@ nav {
 .logo .top_logo1 {
   width: 80px;
 }
+
 .logo .top_logo2 {
   width: 60px;
   opacity: 0;
   margin: 20% 0 0 20%;
 }
+
 .logo:hover .top_logo1 {
-  display: none; 
+  display: none;
 }
+
 .logo:hover .top_logo2 {
   opacity: 1;
 }
@@ -229,9 +244,11 @@ nav button:hover {
   font-size: 33px;
   font-weight: 500;
 }
+
 .react-tabs__tab--selected {
   color: #00ffa3;
 }
+
 .react-tabs__tab {
   margin-top: 190px;
   /* color: white; */
@@ -253,6 +270,7 @@ nav button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 /* ------------ shop tabs ----------- */
 .about-container {
   display: flex;
@@ -287,9 +305,11 @@ nav button:hover {
   font-size: 33px;
   font-weight: 500;
 }
+
 .react-tabs__tab--selected {
   color: #00ffa3;
 }
+
 .react-tabs__tab {
   margin-top: 190px;
   background: none;
@@ -299,6 +319,7 @@ nav button:hover {
 .react-tabs__tab-list {
   border-bottom: none;
 }
+
 /* --------------------------------------- */
 .grid {
   display: flex;
@@ -457,18 +478,22 @@ nav button:hover {
   height: 80px;
   width: 20%;
 }
+
 .carousel-status {
   display: none;
 }
+
 .carousel .thumbs-wrapper.axis-vertical {
   margin: 20px 0 0 0;
   display: flex;
   justify-content: center;
 }
+
 .carousel {
   text-align: center;
   width: 100%;
 }
+
 .control-dots {
   display: flex;
   justify-content: center;
@@ -505,10 +530,12 @@ nav button:hover {
   transform: translateX(8px);
 
 }
+
 .content-text p span {
   font-size: 25px;
   font-weight: 500;
 }
+
 .content-text b {
   color: rgb(0, 174, 255);
   font-weight: 200;
@@ -575,14 +602,17 @@ nav button:hover {
 .page-3 img {
   position: absolute;
 }
+
 .bg-about-img {
   width: 100%;
 }
+
 .sarwuu {
   width: 40%;
   right: 5%;
   top: 10%;
 }
+
 .avatar-circle {
   z-index: 5;
   position: relative;
@@ -594,6 +624,7 @@ nav button:hover {
   border-radius: 50%;
 
 }
+
 .avatar-circle img {
   position: absolute;
   right: -110px;
@@ -615,13 +646,16 @@ nav button:hover {
   font-size: 40px;
   font-weight: 500;
 }
+
 .page-2-p {
   margin-top: 60px;
 }
+
 .page-2-text p {
   font-size: 18px;
   margin-top: 5px;
 }
+
 .page-2-text button {
   cursor: pointer;
   margin-top: 80px;
@@ -632,12 +666,14 @@ nav button:hover {
   color: lightgray;
   border-radius: 15px;
 }
+
 .page-2-text button:hover {
   background: lightgray;
   color: black;
   transition: all .4s ease-in-out;
 }
-.page-3  b {
+
+.page-3 b {
   z-index: 5;
   position: absolute;
   color: white;
@@ -645,16 +681,19 @@ nav button:hover {
   top: 40%;
   left: 10%;
 }
+
 .page-3 img {
   width: 100vw;
 }
-.page-4 b{
+
+.page-4 b {
   z-index: 5;
   position: absolute;
   color: white;
   font-size: 40px;
   top: 20%;
 }
+
 .page-4 button {
   position: absolute;
   top: 75%;
@@ -665,6 +704,7 @@ nav button:hover {
   color: white;
   border: 2px solid white;
 }
+
 .home-shop-btn,
 .totem-shop-btn {
   position: absolute;
@@ -677,10 +717,12 @@ nav button:hover {
   top: 260px;
   font-size: 25px;
 }
+
 .home-shop-btn img {
   margin-top: -70px;
   width: 250px;
 }
+
 .shape-shop {
   margin-top: 40px;
   width: 150px;
@@ -689,9 +731,11 @@ nav button:hover {
   border-radius: 30px;
   border: 2px solid #00ffa3;
 }
+
 .page-6 button {
   position: absolute;
 }
+
 /* ----------- About ------- */
 .about-container {
   position: relative;
@@ -751,9 +795,11 @@ nav button:hover {
 .tabs__radio2:checked+.tabs__label-2 {
   color: #00ffa3;
 }
+
 .tabs__radio2:checked+.tabs__label-2+.tabs__content-2 {
   display: block;
 }
+
 /* =========== News ================ */
 .news-wrapp {
   z-index: 1;
@@ -770,6 +816,7 @@ nav button:hover {
   font-size: 33px;
   font-weight: 500;
 }
+
 /* =========== Totems ============== */
 section {
   position: relative;
@@ -933,6 +980,7 @@ label {
 .input-wrapp input {
   width: 450px;
   height: 25px;
+  padding: 0 10px;
   margin-top: 5px;
   border: none;
   background: none;
@@ -940,8 +988,9 @@ label {
   color: white;
 }
 
-.subject-input input {
+.subject-input textarea {
   color: white;
+  padding: 10px;
   margin-top: 5px;
   border: none;
   background: none;
@@ -963,7 +1012,7 @@ form span {
   background: none;
   border: 0.5px solid gray;
   color: #00ffa3;
-  padding: 5px 8px;
+  padding: 5px 20px;
   margin-left: 496px;
 }
 
@@ -1061,6 +1110,7 @@ form span {
   transform: scale(1.08);
   transition-delay: 0ms, 0ms;
 }
+
 /* ========= About section ====== */
 .about_wrapper {
   margin-top: 120px;
@@ -1071,27 +1121,32 @@ form span {
   margin-bottom: 200px;
 
 }
+
 .about_wrapper h4 {
   font-size: 33px;
   font-weight: 500;
   color: #00ffa3;
 }
+
 .text_wrapp_about {
   display: flex;
   margin-top: 120px;
   width: 70vw;
 }
+
 .text_wrapp_about p {
   width: 34%;
   text-align: justify;
   line-height: 2;
 }
+
 /* ========= paypal button ======= */
 .paypal-button-container2 {
   width: 200px;
   height: 95px;
   overflow: hidden;
 }
+
 .paypal-button-container2 .no-paypal {
   text-align: center;
   font-weight: 500;
