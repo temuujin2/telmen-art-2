@@ -5,6 +5,7 @@ import linkedin from '../images/icons/linkedin.png'
 import twitter from '../images/icons/twitter.png'
 import youtube from '../images/icons/youtube.png'
 import art from '../images/icons/art.png'
+import discord from '../images/discord.png'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -37,7 +38,7 @@ export const Contact = () => {
                 <a href="https://www.youtube.com" rel="noreferrer" target="_blank"><img src={youtube} alt='for contact'></img></a>
                 <a href="https://www.twitter.com" rel="noreferrer" target="_blank"><img src={twitter} alt='for contact'></img></a>
                 <a href="https://www.linkedin.com" rel="noreferrer" target="_blank"><img src={linkedin} alt='for contact'></img></a>
-                <a href="https://www.facebook.com" rel="noreferrer" target="_blank"><img src={face} alt='for contact'></img></a>
+                <a href="https://discord.gg/nJbkRfdV32" rel="noreferrer" target="_blank"><img src={discord} alt='for contact'></img></a>
             </div>
             <form ref={form} onSubmit={sendEmail}>
                 <div className='input-wrapp'>
