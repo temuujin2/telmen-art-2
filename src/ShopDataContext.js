@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import ShopData from './data/ShopData.json'
+import React from 'react'
 
 const ShopContext = createContext()
 

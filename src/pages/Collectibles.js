@@ -3,7 +3,7 @@ import PaypalCheckoutButton from "../component/PaypalCheckoutButton";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import BGG from '../images/BGGGG.png'
-
+import React from 'react'
 
 
 

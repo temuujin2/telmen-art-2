@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import Data from './data/ImageData.json'
+import React from 'react'
 
 const MovieContext1 = createContext()
 

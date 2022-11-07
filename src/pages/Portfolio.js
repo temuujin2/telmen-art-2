@@ -4,7 +4,7 @@ import Data from '../data/ImageData.json';
 import { useNavigate } from 'react-router-dom';
 import { MovieDataContext1 } from "../newContext";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
+import React from 'react'
 
 export const Portfolio = ({ data }) => {
     const navigate = useNavigate();

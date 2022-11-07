@@ -1,5 +1,5 @@
 import imgBack_about from '../images/BGGGG.png'
-
+import React from 'react'
 
 
 

@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import BGG from '../images/BGGGG.png'
 import PaypalCheckoutButton from "../component/PaypalCheckoutButton";
-
+import React from 'react'
 
 
 

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import imgBack_about from '../images/BGGGG.png'
 import { ShopDataContext } from '../ShopDataContext'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
+import React from 'react'
 
 
 export const Shop = () => {
