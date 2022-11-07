@@ -112,14 +112,14 @@ nav {
 }
 
 .nav_shadow {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100vw;
   background-image: url(../src/images/nav_shadow.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  z-index: -4;
+  z-index: 10;
 }
 
 .logo {
