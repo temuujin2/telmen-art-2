@@ -1,7 +1,8 @@
 
-import React from 'react'
-import { useEffect } from 'react'
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import Slide from 'react-reveal/Slide';
+import FadeScroll from 'react-reveal/Fade';
+import Roll from 'react-reveal/Roll';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 import generic from '../images/generic-portfolio.png'
 import videoBg from '../video/All_9generals_1_1.mp4'
 import Tenger from '../images/Tengeriin_Daira.png'
@@ -11,6 +12,8 @@ import Portrait from '../images/Portrait.png'
 import Sarwuu from '../images/Sarwuu.png'
 import About from '../images/About.png'
 import BIIR from '../images/BIIR_X.png'
+import { useEffect } from 'react'
+import React from 'react'
 import {
   Animator,
   ScrollContainer,
@@ -62,7 +65,7 @@ export const Home = () => {
                 <Animator animation={ZoomIn}>
                   <div className='page-2-p'>
                     <p>Hello everyone! My name's Telmen Bayasgalan</p>
-                    <p>I'm a digital artist</p>
+                    <p>I'm a digital artist.</p>
                     <p>I reside in Ulaanbaatar, Mongolia.</p>
                     <p>Truly, I self-taught about "CG art".</p>
                     <p>It's give me a chance that l float on my imagination.</p>
@@ -80,8 +83,10 @@ export const Home = () => {
       <ScrollPage page={2}>
         <Animator animation={FadeUp}>
           <div className='page-3'>
-            <b>Stl, Obj files</b>
-
+          <Slide left>
+              <p></p>
+              <b>Stl, Obj files</b>
+          </Slide>
             <img src={subeedei} alt="for back-bg" />
           </div>
         </Animator>
@@ -91,6 +96,7 @@ export const Home = () => {
         <Animator animation={FadeUp}>
           <div className='page-4'>
             <b>Shop</b>
+        <FadeScroll bottom big cascade>
             <div className='home-shop-btn'>
               <div>Prints
                 <div className='shape-shop'></div>
@@ -108,6 +114,7 @@ export const Home = () => {
                 <div className='shape-shop'></div>
               </div>
             </div>
+          </FadeScroll>
             <img src={subeedei} alt="for back-bg" />
           </div>
         </Animator>
@@ -115,8 +122,12 @@ export const Home = () => {
       {/* ----------------------- Page 5 -------------------- */}
       <ScrollPage page={2}>
         <Animator animation={FadeUp}>
-          <div className='page-3'>
-            <b>You can buy my limited art prints</b>
+          <div className='page-5'>
+            <Roll left>
+              <b>You can buy my limited art prints</b>
+              <p>10% of your purchase</p>
+              <span>will be donated to children's charities</span>
+            </Roll>
             <img src={Tenger} alt="for back-bg" />
           </div>
         </Animator>
@@ -125,15 +136,7 @@ export const Home = () => {
       <ScrollPage page={2}>
         <Animator animation={FadeUp}>
           <div className='page-4'>
-            <b>Totems</b>
-            <div className='home-shop-btn'>
-              <div className='home-totem-wrapp'>
-                <img src={totem} alt="for totem" />
-                <img src={totem} alt="for totem" />
-                <img src={totem} alt="for totem" />
-                <img src={totem} alt="for totem" />
-              </div>
-            </div>
+            <span>GOLDEN TICKET</span>
             <button>learn more</button>
             <img src={Tenger} alt="for back-bg" />
           </div>

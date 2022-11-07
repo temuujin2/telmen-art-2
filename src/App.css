@@ -588,7 +588,8 @@ nav button:hover {
 /* ---------- Pages ------------- */
 .page-2,
 .page-3,
-.page-4 {
+.page-4,
+.page-5 {
   position: relative;
   display: flex;
   align-items: center;
@@ -638,13 +639,13 @@ nav button:hover {
   z-index: 10;
   left: 300px;
   color: white;
-  top: 360px;
+  top: 310px;
   position: absolute;
 }
 
 .page-2-text b {
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .page-2-p {
@@ -652,8 +653,9 @@ nav button:hover {
 }
 
 .page-2-text p {
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 5px;
+  letter-spacing: 1.4px;
 }
 
 .page-2-text button {
@@ -674,14 +676,22 @@ nav button:hover {
 }
 
 .page-3 b {
-  z-index: 5;
+  z-index: 10;
   position: absolute;
-  color: white;
-  font-size: 60px;
-  top: 40%;
+  color: rgb(17, 17, 17);
+  font-size: 100px;
+  top: 30%;
   left: 10%;
 }
-
+.page-3 p {
+  position: absolute;
+  top: 28%;
+  z-index: 10;
+  left: 0;
+  width: 40%;
+  height: 150px;
+  background: #00ffa3;
+}
 .page-3 img {
   width: 100vw;
 }
@@ -693,7 +703,42 @@ nav button:hover {
   font-size: 40px;
   top: 20%;
 }
-
+.page-5 b {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  width: 50%;
+  top: 30%;
+  left: 10%;
+}
+.page-5 p {
+  position: absolute;
+  top: 60%;
+  font-size: 28px;
+  color: white;
+  z-index: 10;
+  left: 22%;
+  width: 40%;
+  letter-spacing: 1.6px;
+}
+.page-5 span {
+  position: absolute;
+  top: 64%;
+  font-size: 28px;
+  color: white;
+  z-index: 10;
+  left: 22%;
+  width: 40%;
+  letter-spacing: 1.6px;
+}
+.page-4 b {
+  z-index: 5;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 20%;
+}
 .page-4 button {
   position: absolute;
   top: 75%;
@@ -737,9 +782,33 @@ nav button:hover {
   transform: scale(1.11);
   transition: all .2s ease-in-out;
 }
-
-.page-6 button {
+.page-4 span {
+  z-index: 5;
   position: absolute;
+  color: #b3986b;
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  top: 40%;
+}
+.page-4 button {
+  cursor: pointer;
+  margin-top: -40px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  padding: 12px 25px;
+  border: 2px solid lightgray;
+  background: none;
+  color: lightgray;
+  border-radius: 25px;
+}
+
+.page-4 button:hover {
+  background: lightgray;
+  color: black;
+  transition: all .4s ease-in-out;
 }
 
 /* ----------- About ------- */
