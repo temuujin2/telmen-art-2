@@ -6,7 +6,6 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 import generic from '../images/generic-portfolio.png'
 import videoBg from '../video/All_9generals_1_1.mp4'
 import Tenger from '../images/Tengeriin_Daira.png'
-import totem from '../images/Leopart_Totem.png'
 import subeedei from '../images/Subegedei.png'
 import Portrait from '../images/Portrait.png'
 import Sarwuu from '../images/Sarwuu.png'
@@ -19,14 +18,11 @@ import {
   ScrollContainer,
   ScrollPage,
   batch,
-  Fade,
   FadeIn,
   Move,
-  MoveIn,
   ZoomIn,
 } from "react-scroll-motion";
 
-const FadeUp = batch(Fade(), MoveIn());
 
 export const Home = () => {
   useEffect(() => {
@@ -52,7 +48,7 @@ export const Home = () => {
 
       {/* ----------------------- Page 2 -------------------- */}
       <ScrollPage page={1}>
-        <Animator animation={FadeUp}>
+        <Animator>
           <div className='page-2'>
             <Animator>
               <div className='avatar-circle'>
@@ -81,7 +77,7 @@ export const Home = () => {
       </ScrollPage>
       {/* ----------------------- Page 3 -------------------- */}
       <ScrollPage page={2}>
-        <Animator animation={FadeUp}>
+        <Animator>
           <div className='page-3'>
           <Slide left>
               <p></p>
@@ -93,7 +89,7 @@ export const Home = () => {
       </ScrollPage>
       {/* ----------------------- Page 4 -------------------- */}
       <ScrollPage page={2}>
-        <Animator animation={FadeUp}>
+        <Animator>
           <div className='page-4'>
             <b>Shop</b>
         <FadeScroll bottom big cascade>
@@ -121,7 +117,7 @@ export const Home = () => {
       </ScrollPage>
       {/* ----------------------- Page 5 -------------------- */}
       <ScrollPage page={2}>
-        <Animator animation={FadeUp}>
+        <Animator >
           <div className='page-5'>
             <Roll left>
               <b>You can buy my limited art prints</b>
@@ -134,7 +130,7 @@ export const Home = () => {
       </ScrollPage>
       {/* ----------------------- Page 6 -------------------- */}
       <ScrollPage page={2}>
-        <Animator animation={FadeUp}>
+        <Animator>
           <div className='page-4'>
             <span>GOLDEN TICKET</span>
             <button>learn more</button>

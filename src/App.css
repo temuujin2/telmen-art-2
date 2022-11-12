@@ -596,12 +596,16 @@ nav button:hover {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+
 }
 
-.page-2 img,
-.page-3 img {
+.page-2 img {
   position: absolute;
+}
+.subeedei {
+  position: sticky;
+  top: 0;
+  z-index: -5;
 }
 
 .bg-about-img {
@@ -731,6 +735,11 @@ nav button:hover {
   left: 22%;
   width: 40%;
   letter-spacing: 1.6px;
+}
+.page-5 img {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
 }
 .page-4 b {
   z-index: 5;
