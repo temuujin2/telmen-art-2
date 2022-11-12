@@ -95,19 +95,19 @@ export const Home = () => {
         <FadeScroll bottom big cascade>
             <div className='home-shop-btn'>
               <div>Prints
-                <div className='shape-shop'></div>
+                <div className='img--1 shape-shop'></div>
               </div>
               <div>3D model
-                <div className='shape-shop'></div>
+                <div className='img--2 shape-shop'></div>
               </div>
               <div>Collectibles
-                <div className='shape-shop'></div>
+                <div className='img--3  shape-shop'></div>
               </div>
               <div>Merch
-                <div className='shape-shop'></div>
+                <div className='img--4 shape-shop'></div>
               </div>
               <div>Tutorials
-                <div className='shape-shop'></div>
+                <div className='img--5 shape-shop'></div>
               </div>
             </div>
           </FadeScroll>

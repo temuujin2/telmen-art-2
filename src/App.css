@@ -791,6 +791,26 @@ nav button:hover {
   transform: scale(1.11);
   transition: all .2s ease-in-out;
 }
+.img--1 {
+  background-image: url(../src/images/shop\ home/cover1.png);
+  background-size: cover;
+}
+.img--2 {
+  background-image: url(../src/images/shop\ home/cover2.png);
+  background-size: cover;
+}
+.img--3 {
+  background-image: url(../src/images/shop\ home/cover3.png);
+  background-size: cover;
+}
+.img--4 {
+  background-image: url(../src/images/shop\ home/cover4.png);
+  background-size: cover;
+}
+.img--5 {
+  background-image: url(../src/images/shop\ home/cover5.png);
+  background-size: cover;
+}
 .page-4 span {
   z-index: 5;
   position: absolute;
