@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(15, 16, 24);
+  background: #070707;
 }
 
 .scroll-btn {

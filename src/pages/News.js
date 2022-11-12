@@ -2,8 +2,8 @@ import imgBack_about from '../images/BGGGG.png'
 import React from 'react'
 import RecipeReviewCard from '../component/BlogCard'
 import RecipeReviewCard2 from '../component/BlogCard2'
-import RecipeReviewCard3 from '../component/BlogCard3'
-import RecipeReviewCard4 from '../component/BlogCard4'
+import ImgMediaCard from '../component/ImgMedia1'
+import ImgMediaCard2 from '../component/ImgMedia2'
 import { Box } from '@mui/system'
 
 
@@ -20,10 +20,10 @@ export const News = () => {
                         <RecipeReviewCard2 />
                     </Box>
                     <Box>
-                        <RecipeReviewCard3 />
+                        <ImgMediaCard />
                     </Box>
                     <Box>
-                        <RecipeReviewCard4 />
+                        <ImgMediaCard2 />
                     </Box>
                 </Box>
 
