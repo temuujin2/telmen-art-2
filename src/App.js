@@ -6,7 +6,6 @@ import Data from './data/ImageData.json';
 import Stamp from './images/Stamp.png';
 import Typography from '@mui/material/Typography';
 import ChontLogo from './images/CHONT_LOGO_white.png';
-import VerticalLinearStepper from './component/Stepper';
 
 import {
   Route,
@@ -26,6 +25,7 @@ import { Contact } from './pages/Contact';
 import { Portfolio } from "./pages/Portfolio";
 import { Tutorials } from './pages/Tutorials';
 import { Collectibles } from './pages/Collectibles';
+import SimplePortal from './component/Qrcode';
 
 const style = {
   position: 'absolute',
@@ -34,8 +34,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: '#1c1c1c',
   boxShadow: 24,
   p: 4,
 };
@@ -51,7 +50,7 @@ const App = () => {
       <div className='main'>
 
 
-          <div className='nav_shadow'></div>
+        <div className='nav_shadow'></div>
         <nav>
           <div className='logo'>
             <a href='/'>
@@ -92,10 +91,10 @@ const App = () => {
               aria-describedby="modal-modal-description"
             >
               <Box sx={style}>
-                <Typography id="modal-modal-title" variant="h6" component="h2">
+                <Typography id="modal-modal-title" variant="h6" component="h2" color="white">
                   Thank you for supporting me
                 </Typography>
-                <VerticalLinearStepper />
+                <SimplePortal />
               </Box>
             </Modal>
           </ul>
